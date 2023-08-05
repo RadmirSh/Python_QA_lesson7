@@ -25,5 +25,17 @@ def check_rhythm(song):
 
     return "Парам пам-пам"  # если количество слогов одинаковое во всех фразах, возвращаем "Парам пам-пам"
 
+def count_vowels(word):
+    vowels = "aeiouаеёиоуыэюя"  # список гласных букв
+    count = 0
 
+    for char in word.lower():
+        if char in vowels:
+            count += 1
+
+    return count
+
+song = input("Введите стихотворение: ")
+result = check_rhythm(song)
+print(result)
     
