@@ -24,3 +24,7 @@ def print_operation_table(operation, num_rows=6, num_columns=6):
         print()  # переход на новую строку
 
 
+def multiply(x, y):
+    return x * y
+
+print_operation_table(multiply, 3, 8)
