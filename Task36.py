@@ -16,3 +16,11 @@
 # 5 10 15 20 25 30
 # 6 12 18 24 30 36
 
+def print_operation_table(operation, num_rows=6, num_columns=6):
+    for row in range(1, num_rows + 1):  # по строкам 
+        for col in range(1, num_columns + 1):  # по столбцам 
+            result = operation(row, col)  
+            print(f"{result}\t", end="")  # вывод с табуляцией
+        print()  # переход на новую строку
+
+
